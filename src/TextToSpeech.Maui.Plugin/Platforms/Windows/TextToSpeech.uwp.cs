@@ -1,5 +1,4 @@
-﻿using Plugin.TextToSpeech.Abstractions;
-using System;
+﻿using System;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
@@ -8,6 +7,7 @@ using Windows.Media.SpeechSynthesis;
 using System.Diagnostics;
 using Windows.Media.Playback;
 using System.Collections.Generic;
+using TextToSpeech.Maui.Plugin;
 
 namespace Plugin.TextToSpeech
 {

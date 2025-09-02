@@ -156,6 +156,8 @@
     <ProjectReference Include="..\TextToSpeech.Plugin\TextToSpeech.Plugin.csproj">
       <Project>{89c2004c-7253-4c94-a7eb-b9b3924d49c1}</Project>
       <Name>TextToSpeech.Plugin</Name>
+      <TargetPlatformIdentifier>Android</TargetPlatformIdentifier>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

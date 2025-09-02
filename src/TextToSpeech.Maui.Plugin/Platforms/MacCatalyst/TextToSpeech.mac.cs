@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using AppKit;
-using Plugin.TextToSpeech.Abstractions;
+using TextToSpeech.Maui.Plugin;
 
 
 namespace Plugin.TextToSpeech

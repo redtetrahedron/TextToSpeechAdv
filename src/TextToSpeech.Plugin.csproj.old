@@ -1,0 +1,84 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net9.0-android35.0</TargetFramework>
+		<AssemblyName>Plugin.TextToSpeech</AssemblyName>
+		<RootNamespace>Plugin.TextToSpeech</RootNamespace>
+		<SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+        <OutputType>Library</OutputType>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseMaui>true</UseMaui>
+        <SingleProject>true</SingleProject>
+		<LangVersion>latest</LangVersion>
+		<Product>$(AssemblyName) ($(TargetFramework))</Product>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<AssemblyFileVersion>1.0.0.0</AssemblyFileVersion>
+		<Version>1.0.0.0</Version>
+		<Authors>James Montemagno, Sam DiPiazza</Authors>
+		<PackageId>redtetrahedron.Plugins.TextToSpeech</PackageId>
+		<PackOnBuild>true</PackOnBuild>
+		<PackageIconUrl>http://refractored.com/images/tts_icon_large.png</PackageIconUrl>
+		<PackageLicenseUrl>https://github.com/jamesmontemagno/TextToSpeechPlugin/blob/master/LICENSE</PackageLicenseUrl>
+		<Owners>JamesMontemagno</Owners>
+		<Summary>Cross platform Text-to-Speech for MAUI.</Summary>
+		<PackageTags>maui, android, ios, windows phone, windows store, winrt, universal apps, mac, text to speech, tts, texttospeech</PackageTags>
+		<Title>Text to Speech Plugin for MAUI</Title>
+		<Description>
+			MAUI plugin to perform text to speech functionality.
+			Adjustable pitch, speak rate, locale, and more.
+		</Description>
+		<Copyright>Copyright 2018, 2025</Copyright>
+		<NeutralLanguage>en</NeutralLanguage>
+		<LangVersion>default</LangVersion>
+		<EnableDefaultCompileItems>true</EnableDefaultCompileItems>
+		<GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
+		<DefineConstants>$(DefineConstants);</DefineConstants>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
+		<DebugType>full</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)'=='Release' ">
+		<DebugType>pdbonly</DebugType>
+	</PropertyGroup>
+	
+	<!-- <ItemGroup> -->
+		<!-- <PackageReference Include="MSBuild.Sdk.Extras" Version="1.4.0" PrivateAssets="All" /> -->
+		<!-- <Compile Include="**\*.shared.cs" /> -->
+	<!-- </ItemGroup> -->
+
+	<!-- <ItemGroup Condition=" $(TargetFramework.StartsWith('netstandard')) "> -->
+	<!-- </ItemGroup> -->
+
+	<!-- <ItemGroup Condition=" $(TargetFramework.StartsWith('uap10.0')) "> -->
+		<!-- <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="5.2.3" /> -->
+		<!-- <Compile Include="**\*.uwp.cs" /> -->
+	<!-- </ItemGroup> -->
+
+	<!-- <ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) "> -->
+		<!-- <Compile Include="**\*.android.cs" /> -->
+	<!-- </ItemGroup> -->
+
+	<!-- <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.iOS')) "> -->
+		<!-- <Compile Include="**\*.apple.cs" /> -->
+	<!-- </ItemGroup> -->
+
+
+	<!-- <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.TVOS')) "> -->
+		<!-- <Compile Include="**\*.apple.cs" /> -->
+	<!-- </ItemGroup> -->
+	
+	<!-- <ItemGroup Condition=" $(TargetFramework.StartsWith('Xamarin.Mac')) "> -->
+		<!-- <Compile Include="**\*.mac.cs" /> -->
+	<!-- </ItemGroup> -->
+
+	<!-- <Import Project="$(MSBuildSDKExtrasTargets)" Condition="Exists('$(MSBuildSDKExtrasTargets)')" /> -->
+
+	<ItemGroup>
+        <PackageReference Include="Microsoft.Maui.Essentials" Version="9.0.100" />
+		    <PackageReference Include="Microsoft.Maui.Controls" Version="9.0.100" />
+    <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="9.0.100" />
+    </ItemGroup>
+	
+</Project>
