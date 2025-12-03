@@ -4,9 +4,9 @@
 //     Copyright (c) redtetrahedron. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------
-using System.Text.RegularExpressions;
 using Android.OS;
 using Android.Speech.Tts;
+using System.Text.RegularExpressions;
 using AndroidApp = Android.App;
 using AndroidTextToSpeech = Android.Speech.Tts.TextToSpeech;
 using AndroidUtil = Android.Util;
